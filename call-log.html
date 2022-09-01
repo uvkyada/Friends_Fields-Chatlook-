@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatllok || Call Log</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/font.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+  <body>
+    <div class="main flex items-start overflow-hidden">
+      <aside>
+        <div class="w-full flex items-center h-20 px-3.5 relative">
+          <a href="Profile.html" class="hidden md:flex items-center space-x-3">
+              <div class="w-10 h-10 rounded-full bg-slate-200 flex p-2 pb-0 overflow-hidden">
+                <img src="./assest/images/woman.png" class="object-cover" alt="woman"/>
+              </div>
+              <div>
+                <h4>Hi,</h4>
+                <h4>Caroline Case</h4>
+              </div>
+          </a>
+          <span class="flex px-1 text-2xl ml-auto text-chatlook-dark">
+            <a href="addproduct.html" class="icon-store"></a>
+          </span>       
+          <span class="flex px-1 text-xl ml-2 text-chatlook-dark" onclick="toggleFunction('chat-drop', 'open')">
+          <a href="#" class="icon-Group-2"></a>
+          </span> 
+          <!-- chat-dropdown  -->
+          <div id="chat-drop" class="p-3.5 shadow-one bg-white absolute top-16 right-5 z-20 space-y-3 rounded-md min-w-[120px] scale-y-0 origin-top visited:hidden anim">
+            <h4><a href="Marketing.html">Marketing</a></h4>
+            <h4><a href="friend-request.html">Requests</a></h4>
+            <h4><a href="setting.html">Settings</a></h4>
+          </div>
+        </div>
+        <div class="aside-tabs w-full px-3.5">
+          <!-- tab-header  -->
+          <div class="tab-menu flex justify-between p-[10px] bg-chatlook-grayLight rounded-md">
+              <a href="chat-details.html" class="py-2 px-6 text-sm font-medium uppercase">Chats</a>
+              <a href="status.html" class="py-2 px-6 text-sm font-medium  uppercase">Status</a>
+              <a href="call-log.html" class="py-2 px-6 text-sm font-medium  uppercase bg-white text-chatlook-sky shadow rounded-md">Calls</a>
+          </div>
+          <!-- search-bar  -->
+          <div class="tab-search py-4 flex items-center space-x-3">
+            <label for="search" class="w-full py-2 px-3 flex items-center rounded-md border border-chatlook-grayLight">
+            <input type="search" name="Search" id="Search" placeholder="Search" class="w-full outline-none">
+            <i class="icon-search"></i>
+            </label>
+          </div>
+        </div>
+        <div class="w-full px-3.5 h-[calc(100vh-208px)] overflow-y-auto">
+          <!-- all tabs -->
+          <div class="tab-holder pt-2">
+            <div class="" id="call">
+              <div class="flex justify-between items-center">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-top text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-call text-2xl"></button>
+              </div>
+              <div class="flex justify-between items-center pt-5">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-bottom text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-call text-2xl"></button>
+              </div>
+              <div class="flex justify-between items-center pt-5">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-bottom text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-call text-2xl"></button>
+              </div>
+              <div class="flex justify-between items-center pt-5 video-btn-sky">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-bottom text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-video text-chatlook-sky text-2xl"></button>
+              </div>
+              <div class="flex justify-between items-center pt-5">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-bottom text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-call text-2xl"></button>
+              </div>
+              <div class="flex justify-between items-center pt-5 video-btn-sky">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-bottom text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-video text-chatlook-sky text-2xl"></button>
+              </div>
+              <div class="flex justify-between items-center pt-5">
+                <div class="flex">
+                  <div class="w-10 h-10 rounded-full overflow-hidden  mr-4">
+                    <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                  </div>
+                  <div class="">
+                    <h4>Hunter Bryan</h4>
+                    <div class="pt-1">
+                      <i class="icon-cross-bottom text-sm mr-2"></i>
+                      <span>Today, 09:30</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="icon-call text-2xl"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content">
+        <header>
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 rounded-full bg-slate-200 flex p-2 pb-0 overflow-hidden">
+              <img src="./assest/images/woman.png" class="object-cover" alt="woman"/>
+            </div>
+            <div>
+              <h4 class="mt-1">Hunter Bryan</h4>
+              <span class="text-chatlook-sky">Online</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 ml-auto">
+            <span class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-sky shadow rounded-full text-[#8094ae]">
+            <i class="icon-video"></i>
+            </span>
+            <span class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-sky shadow rounded-full text-[#8094ae]">
+            <i class="icon-phone" aria-hidden="true"></i>
+            </span>
+          </div>
+        </header>
+        <main>
+          <div class="relative">
+            <div class="chat-holdr h-[calc(100vh-151px)] overflow-y-auto">
+              <div class="chatting-bar py-7 md:p-7 md:px-3.5">
+                <div class="w-[90%] xl:w-[80%] mx-auto space-y-7">
+                  <div class="massge-left w-[80%] lg:w-[60%]">
+                    <div class="max-w-max">
+                      <p class="chat p-3.5 bg-chatlook-grayLight rounded-md">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomised words which don't look even slightly believable. </p>
+                      <div class="text-right mt-1">
+                        <span class="flex items-center justify-end">10:03 <i class="ml-1 icon-massage-send text-lg"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="massge-left w-[80%] lg:w-[60%]">
+                    <div class="max-w-max">
+                      <p class="chat p-3.5 bg-chatlook-grayLight rounded-md">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomised words which don't look even slightly believable. </p>
+                      <div class="text-right mt-1">
+                        <span class="flex items-center justify-end">10:03 <i class="ml-1 icon-massage-send text-lg"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="massge-right w-[80%] lg:w-[60%] ml-auto">
+                    <div class="max-w-max ml-auto">
+                      <p class="chat p-3.5 bg-chatlook-skyLight rounded-md">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomised words which don't look even slightly believable. </p>
+                      <div class="text-right mt-1">
+                        <span class="flex items-center justify-end">10:03 <i class="ml-1 icon-massage-send text-lg"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="massge-right w-[80%] lg:w-[60%] ml-auto">
+                    <div class="max-w-max ml-auto">
+                      <p class="chat p-3.5 bg-chatlook-skyLight rounded-md">There are many </p>
+                      <div class="text-right mt-1">
+                        <span class="flex items-center justify-end">10:03 <i class="ml-1 icon-massage-send text-lg"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="relative py-2">
+                    <hr>
+                    <span class="absolute left-1/2 -translate-x-1/2 -mt-1.5 px-3 bg-white">Today</span>
+                  </div>
+                  <div class="massge-left w-[80%] lg:w-[60%]">
+                    <div class="max-w-max">
+                      <div class="chat p-3.5 bg-chatlook-grayLight rounded-md">
+                        <img src="./assest/images/noti-1.png" alt="noti-1"/>
+                      </div>
+                      <div class="text-right mt-1">
+                        <span class="flex items-center justify-end">10:03 <i class="ml-1 icon-massage-send text-lg"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- chat-input  -->
+            <div class="w-full bg-white border-t border-chatlook-grayLight py-3">
+              <div class="w-[90%] xl:w-[80%] mx-auto flex items-center space-x-3 px-4">
+                <label for="#type-massage" class="chat-input px-3 py-2 flex space-x-3 items-center rounded-full border border-chatlook-grayLight w-[calc(100%-104px)] relative">
+                  <i class="icon-smile text-xl"></i>
+                  <input type="text" name="Start a new massage" class="w-full" placeholder="Start a new message" id="type-massage">
+                  <div class="btns absolute left-full">
+                    <div class="flex items-center space-x-3 ml-auto call">
+                      <span class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-grayLight shadow rounded-full text-[#8094ae] cursor-pointer">
+                      <i class="icon-camera"></i>
+                      </span>
+                      <span class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-grayLight shadow rounded-full text-[#8094ae] cursor-pointer relative overflow-hidden">
+                      <input type="file" class="absolute top-0 bottom-0 w-full h-full opacity-0">
+                      <i class="icon-image" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                    <div class="ml-auto hidden send">
+                      <span class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-sky shadow rounded-full text-[#8094ae] cursor-pointer">
+                      <i class="icon-send ml-1"></i>
+                      </span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assest/js/main.js"></script>
+    <script src="./assest/js/mousewheel.js"></script>
+  </body>
+</html>

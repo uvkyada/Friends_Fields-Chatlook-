@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatlook || Block Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/font.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+  <body>
+    <div class="main flex items-start overflow-hidden">
+      <aside class="">
+        <div class="w-full flex items-center border-b h-20 px-5">
+          <h3><a href="setting.html" class="icon-left-arrow mr-4"></a> Settings</h3>
+        </div>
+        <div class="w-full pt-4 tabs">
+          <a href="#" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-delete before:content-['\e93b'] before:text-chatlook-gray text-2xl mr-4"></span>
+              clear All chats
+            </div>
+            <button class="bg-[#FC5858] px-4 py-1.5 rounded-md text-white text-center">Clear</button>
+          </a>
+          <a href="#" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-bell-border text-2xl mr-6"></span>
+              Notifications
+            </div>
+            <div class="flex justify-center">
+              <div class="form-check form-switch relative">
+                <input class="form-check-input appearance-none w-12 rounded-full float-left h-6 align-top checked:bg-chatlook-sky bg-gray-200 bg-no-repeat bg-contain focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked="">
+                <span class="absolute w-4 h-4 bg-white rounded-full left-1.5 top-1/2 -translate-y-1/2 pointer-events-none touch-none anim z-10"></span>
+                <span class="text-chatlook-sky text-[10px] font-normal absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none touch-none">Off</span>
+                <span class="text-white text-[10px] font-normal absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none touch-none">ON</span>
+              </div>
+            </div>
+          </a>
+          <a href="block-contect.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-blocked text-2xl mr-6"></span>
+              Blocked Contacts
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <a href="change-number.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-change-num text-2xl mr-6"></span>
+              Change Number
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <a href="contact-us.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-call before:content-['\e924'] before:text-chatlook-gray text-2xl mr-6"></span>
+              Contact Us
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <a href="help.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-info before:content-['\e900'] before:text-chatlook-gray text-2xl mr-6"></span>
+              Help
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <div data-tab="" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-logout text-2xl mr-6"></span>
+              Sign Out
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content">
+      <!-- block contact tab  -->
+        <div class="relative">
+          <header class="z-50">
+            <div class="flex justify-between items-center w-full">
+              <h3><a href="setting.html" class="icon-close inline-block text-chatlook-gray text-xl mr-4"></a>Blocked Contacts</h3>
+            </div>
+          </header>
+          <main class="px-4">
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+            <div class="flex justify-between items-center py-4">
+              <div class="flex items-center justify-start">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
+                  <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover"/>
+                </div>
+                <h4 class="tracking-normal">+91 8568 456 789</h4>
+              </div>
+              <button class="bg-chatlook-sky px-3 uppercase py-1 rounded-md"><span class="text-xs font-bold text-white">unblock</span></button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assest/js/main.js"></script>
+  </body>
+</html>

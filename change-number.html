@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatlook || Block Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/font.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+  <body>
+    <div class="main flex items-start overflow-hidden">
+      <aside class="">
+        <div class="w-full flex items-center border-b h-20 px-5">
+          <h3><a href="setting.html" class="icon-left-arrow mr-4"></a> Settings</h3>
+        </div>
+        <div class="w-full pt-4 tabs">
+          <a href="#" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-delete before:content-['\e93b'] before:text-chatlook-gray text-2xl mr-4"></span>
+              clear All chats
+            </div>
+            <button class="bg-[#FC5858] px-4 py-1.5 rounded-md text-white text-center">Clear</button>
+          </a>
+          <a href="#" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-bell-border text-2xl mr-6"></span>
+              Notifications
+            </div>
+            <div class="flex justify-center">
+              <div class="form-check form-switch relative">
+                <input class="form-check-input appearance-none w-12 rounded-full float-left h-6 align-top checked:bg-chatlook-sky bg-gray-200 bg-no-repeat bg-contain focus:outline-none cursor-pointer shadow-sm" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked="">
+                <span class="absolute w-4 h-4 bg-white rounded-full left-1.5 top-1/2 -translate-y-1/2 pointer-events-none touch-none anim z-10"></span>
+                <span class="text-chatlook-sky text-[10px] font-normal absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none touch-none">Off</span>
+                <span class="text-white text-[10px] font-normal absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none touch-none">ON</span>
+              </div>
+            </div>
+          </a>
+          <a href="block-contect.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-blocked text-2xl mr-6"></span>
+              Blocked Contacts
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <a href="change-number.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-change-num text-2xl mr-6"></span>
+              Change Number
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <a href="contact-us.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-call before:content-['\e924'] before:text-chatlook-gray text-2xl mr-6"></span>
+              Contact Us
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <a href="help.html" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-info before:content-['\e900'] before:text-chatlook-gray text-2xl mr-6"></span>
+              Help
+            </div>
+            <i class="icon-aroow-down text-xl -rotate-90"></i>
+          </a>
+          <div data-tab="" class="sum flex items-center justify-between border-b cursor-pointer py-5 px-5">
+            <div class="text-chatlook-dark flex items-center text-base font-medium  capitalize">
+              <span class="icon-logout text-2xl mr-6"></span>
+              Sign Out
+            </div>
+          </div>
+        </div>
+      </aside>
+    <div class="main-content">
+        <!-- Change Number tab  -->
+        <div class="relative">
+          <header class="z-50">
+            <div class="flex justify-between items-center w-full">
+              <h3><a href="setting.html" class="icon-close inline-block text-chatlook-gray text-xl mr-4"></a>Change Number</h3>
+              <button class="bg-chatlook-sky text-white px-7 py-3.5 rounded-md uppercase font-medium" onclick="removeClassFunction('change-number','hidden')">Change Number</button>
+            </div>
+          </header>
+          <main class="px-4">
+            <div class="max-w-[615px] w-full mx-auto text-center pt-7">
+              <div class="w-64 h-64 rounded-full bg-chatlook-sky bg-opacity-20 overflow-hidden mx-auto relative">
+                <img src="assest/images/change-number.png" alt="change-number" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+              </div>
+              <h3 class="pt-5">Changing your phone number, There are many variations of passages of Lorem Ipsum </h3>
+              <p class="text-sm text-chatlook-gray font-normal pt-4 leading-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <input type="text" placeholder="Old Phone Number" class="w-full bg-chatlook-grayLight rounded-md mt-5 p-4">
+              <input type="text" placeholder="New Phone Number" class="w-full bg-chatlook-grayLight rounded-md mt-5 p-4">
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <!--change number model popup  -->
+    <div id="change-number" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div class="fixed z-10 inset-0 overflow-y-auto">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+          <!-- This element is to trick the browser into centering the modal contents. -->
+          <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+          <div class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center">
+              <button class="icon-close flex justify-end w-full" onclick="addClassFunction('change-number','hidden')"></button>
+              <span class="icon-info text-6xl inline-block pt-3"></span>
+              <h2 class="capitalize pt-5">Are you sure to change your phone number?</h2>
+              <p class="chat text-chatlook-gray font-normal pt-4">Are you sure you want to change your phone number</p>
+              <div class="flex space-x-3 py-5">
+                <button class="w-1/2 inline-block border border-chatlook-sky text-chatlook-sky uppercase rounded-md px-9 py-2.5 text-lg font-normal" onclick="addClassFunction('deletePop','hidden')">No</button>
+                <button class="w-1/2 inline-block bg-chatlook-sky text-white uppercase rounded-md px-12 py-2.5 text-lg font-normal">yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assest/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatlook || Create message </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/font.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+  <body>
+    <div class="main flex items-start overflow-hidden">
+      <aside class="">
+        <div class="w-full flex items-center border-b h-20 px-5">
+          <h3><a href="buy-plan-after-details.html" class="icon-left-arrow mr-4"></a> Buy Plan</h3>
+        </div>
+        <div class="aside-tabs w-full">
+          <div class="px-4 pt-5 pb-2.5">
+            <h3>Marketting Plan</h3>
+          </div>
+          <div class="space-y-4 px-4">
+            <div class="relative">
+              <img src="./assest/images/Basic.png" alt="Basic" class="absolute w-full h-full object-cover rounded-lg"/>
+              <div class="flex justify-between items-start relative p-4">
+                <div>
+                  <h5 class="text-xl font-medium text-chatlook-dark">Basic</h5>
+                  <span class="block pt-4">Send 500 Notification</span>
+                  <span class="block pt-3">Send 100 SMS</span>
+                  <span class="block pt-3">Send 200 Email</span>
+                </div>
+                <div>
+                  <h2 class="text-lg font-bold leading-5 text-chatlook-dark"><span class="text-base font-normal">$</span>150</h2>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./assest/images/Standard.png" alt="Standard" class="absolute w-full h-full object-cover rounded-lg"/>
+              <div class="flex justify-between items-start relative p-4">
+                <div>
+                  <h5 class="text-xl font-medium text-chatlook-dark">Standard</h5>
+                  <span class="block pt-4">Send 500 Notification</span>
+                  <span class="block pt-3">Send 100 SMS</span>
+                  <span class="block pt-3">Send 200 Email</span>
+                </div>
+                <div>
+                  <h2 class="text-lg font-bold leading-5 text-chatlook-dark"><span class="text-base font-normal">$</span>150</h2>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <img src="./assest/images/Premium.png" alt="Premium" class="absolute w-full h-full object-cover rounded-lg"/>
+              <div class="flex justify-between items-start relative p-4">
+                <div>
+                  <h5 class="text-xl font-medium text-chatlook-dark">Premium</h5>
+                  <span class="block pt-4">Send 500 Notification</span>
+                  <span class="block pt-3">Send 100 SMS</span>
+                  <span class="block pt-3">Send 200 Email</span>
+                </div>
+                <div>
+                  <h2 class="text-lg font-bold leading-5 text-chatlook-dark"><span class="text-base font-normal">$</span>150</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content shadow-inset-main z-10">
+        <header class="z-50">
+          <div class="flex justify-between items-center w-full">
+            <h3 class="flex items-center"><a href="#" class="icon-left-arrow mr-2 lg:mr-4"></a> Create message</h3>
+            <a href="details.html" class="inline-block bg-chatlook-sky text-white uppercase rounded-md px-5 py-2.5 text-sm lg:text-lg font-medium">Create message</a>
+          </div>
+        </header>
+        <main class="relative px-5">
+          <div class="w-full max-w-2xl mx-auto pt-7">
+            <form action="" method="post">
+              <div class="w-full h-32 p-10 bg-chatlook-grayLight rounded-md border border-dashed border-chatlook-gray relative flex items-center justify-center mb-5">
+                <input type="file" class="w-full absolute inset-0 opacity-0"/>
+                <div class="text-center relative pointer-events-none touch-none">
+                  <span class="icon-arrow-up text-xl before:content-['\e909'] before:text-chatlook-gray pb-2.5"></span>
+                  <h4 class="text-chatlook-gray">Upload Image</h4>
+                </div>
+              </div>
+              <div class="w-full bg-chatlook-grayLight p-4 rounded-md mb-5">
+                <input type="text" placeholder="Notification Title" class="w-full"/>
+              </div>
+              <div class="w-full bg-chatlook-grayLight p-4 rounded-md mb-5">
+                <textarea placeholder="Notification Description" rows="3" class="w-full bg-transparent text-sm outline-0"></textarea>
+                <div class="text-right text-sm"><span>0</span><span>/150</span></div>
+              </div>
+              <div class="w-full bg-chatlook-grayLight p-4 rounded-md mb-5">
+                <input type="text" placeholder="Link" class="w-full"/>
+              </div>
+              <div class="mb-5">
+                <h2 class="text-base pb-4">Notification</h2>
+                <div class="pb-3 flex items-center">
+                  <span class="icon-location icon-gray text-lg leading-5 pr-3"></span>
+                  <span class="font-normal text-sm">Target Audience Location</span>
+                </div>
+                <div class="w-full bg-chatlook-grayLight p-4 pr-9 rounded-md relative">
+                  <input type="text" placeholder="Address" class="w-full"/>
+                  <span class="icon-mark text-xl absolute right-3"></span>
+                </div>
+              </div>
+              <div class="border-b mb-5 pb-4">
+                <h2 class="text-base pb-4">SMS and Email </h2>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center">
+                    <span class="icon-right-round icon-gray text-xl pr-2.5"></span>
+                    <span class="font-normal text-sm">select user</span>
+                  </div>
+                  <span class="-rotate-90 icon-aroow-down text-lg icon-black cursor-pointer" onclick="removeClassFunction('SelectUserPop','hidden')"></span></a>
+                </div>
+              </div>
+              <div class="flex justify-between items-start pb-5">
+                <div class="flex items-start">
+                  <i class="icon-xl-sheet text-xl"></i>
+                  <div class="pl-2.5">
+                    <h4 class="text-sm font-normal text-chatlook-gray">Upload Excel File</h4>
+                    <a href="#"><span class="font-normal text-sm text-chatlook-sky"><span class="icon-arrow-down"></span> Sample Exe File</span></a>
+                  </div>
+                </div>
+                <button class="text-xs uppercase bg-chatlook-sky text-white py-2 px-2.5 rounded overflow-hidden relative"><i class="icon-arrow-up pr-1 pointer-events-none touch-none"></i>upload file <input type="file" class="absolute inset-0 w-full h-full opacity-0"/></button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Select User popup  -->
+    <div id="SelectUserPop" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div class="fixed z-10 inset-0 overflow-y-auto">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+          <!-- This element is to trick the browser into centering the modal contents. -->
+          <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+          <div class="relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div class="bg-white p-8">
+              <div class="flex justify-between items-center pb-8">
+                <h2>Select User</h2>
+                <button class="icon-close text-xl" onclick="addClassFunction('SelectUserPop','hidden')"></button>
+              </div>
+              <div class="w-full flex justify-between items-center bg-chatlook-grayLight p-3 rounded-md">
+                <input type="text" placeholder="Search" class="w-full pr-2"/>
+                <a href="#"><i class="icon-search"></i></a>
+              </div>
+              <div class="flex justify-between py-5">
+                <span class="text-sm">150 People Selected</span>
+                <div class="flex items-center">
+                  <span class="pr-3 font-medium text-sm text-chatlook-dark">Select All</span>
+                  <div class="round relative">
+                    <input type="checkbox" id="checkAll" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex pointer-events-none touch-none"></label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-1" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-1" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-2" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-2" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-3" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-3" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-4" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-4" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-5" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-5" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-6" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-6" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-4">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-7" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-7" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center pb-5">
+                  <div class="flex">
+                    <div class="w-12 h-12 overflow-hidden rounded-full mr-5">
+                      <img src="assest/images/HunterBryan.png" alt="" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="">
+                      <h5 class="text-base font-medium text-chatlook-dark pb-1">Hunter Bryan</h5>
+                      <p class="text-sm text-chatlook-gray">Hunterbryan@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="relative round">
+                    <input type="checkbox" id="checkbox-8" class="from-control absolute inset-0 w-full h-full opacity-0 cursor-pointer"/>
+                    <label for="checkbox-8" class="bg-white border-[3px] border-chatlook-gray rounded-full w-6 h-6 flex"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="icon-left-arrow before:content-['\e941'] rotate-180 text-xl before:text-white bg-chatlook-sky rounded-full w-14 h-14"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assest/js/main.js"></script>
+  </body>
+</html>

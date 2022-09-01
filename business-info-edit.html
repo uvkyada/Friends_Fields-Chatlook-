@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatlook || Business-info-edit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/font.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+  <body>
+    <div class="main flex items-start overflow-hidden">
+      <aside class="">
+        <div class="w-full flex items-center border-b h-20 px-5">
+          <h3><a href="#" class="icon-left-arrow mr-4"></a> Profile</h3>
+        </div>
+        <div class="aside-tabs w-full pt-4 px-4">
+          <div class="tab-menu flex justify-center space-x-2 py-2 px-2 bg-chatlook-grayLight rounded-md">
+            <a href="Profile.html" class="hover:bg-white hover:text-chatlook-sky text-sm font-medium py-2.5 px-5 rounded-sm uppercase whitespace-nowrap">Personal Info</a>
+            <a href="business-info.html" class="active bg-white text-chatlook-sky text-sm font-medium py-2.5 px-5 rounded-sm uppercase whitespace-nowrap">Business Info</a>
+          </div>
+          <div class="pt-5 px-1.5">
+            <div class="flex">
+              <span class="icon-bag text-lg"></span>
+              <div class="ml-4">
+                <h4>Business Name</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">Latte Cafe</h4>
+              </div>
+            </div>
+            <div class="flex pt-5">
+              <span class="icon-category text-lg"></span>
+              <div class="ml-4">
+                <h4>Category</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">hunterbryan@gmail.com</h4>
+              </div>
+            </div>
+            <div class="flex pt-5">
+              <span class="icon-subcategory text-lg"></span>
+              <div class="ml-4">
+                <h4>Subcategory</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">hunterbryan@gmail.com</h4>
+              </div>
+            </div>
+            <div class="flex pt-5">
+              <span class="icon-info text-lg"></span>
+              <div class="ml-4">
+                <h4>Description</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </h4>
+              </div>
+            </div>
+            <div class="flex pt-5">
+              <span class="icon-location-1 text-lg"></span>
+              <div class="ml-4">
+                <h4>Location</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">4100 Pearcy AvenueLogansport, IN 46947</h4>
+              </div>
+            </div>
+            <div class="flex pt-5">
+              <span class="icon-bag text-lg"></span>
+              <div class="ml-4">
+                <h4>Interested Business Category</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">Company</h4>
+              </div>
+            </div>
+            <div class="flex pt-5">
+              <span class="icon-subcategory text-lg"></span>
+              <div class="ml-4">
+                <h4>Interested Business Subategory</h4>
+                <h4 class="text-chatlook-gray leading-5 font-normal pt-1.5">IT Company</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="main-content">
+        <header class="z-50">
+          <div class="flex justify-between items-center w-full">
+            <h3><a href="business-info.html" class="icon-close inline-block text-chatlook-gray text-xl mr-4"></a>Edit Business Profile</h3>
+            <button class="inline-block bg-chatlook-sky text-white uppercase rounded-md px-8 lg:px-12 py-2.5 text-sm lg:text-lg font-normal">Save</button>
+          </div>
+        </header>
+        <main class="relative px-5 pb-5">
+          <div class="flex flex-col items-center max-w-[615px] w-full mx-auto pt-7">
+            <div class="w-44 h-44 relative">
+              <img src="assest/images/business-info.png" alt="" class="object-cover profial-image w-44 h-44 border-2 border-chatlook-sky rounded-full overflow-hidden"/>          
+              <input type="file" name="" id="profial" class="hidden">
+              <label for="profial" class="w-12 h-12 absolute bottom-0 right-0 bg-chatlook-sky rounded-full z-10 block icon-pen before:content-['\e93f'] before:flex before:items-center before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:justify-center before:text-2xl before:text-white"></label>
+            </div>
+            <form action="#" class="max-w-[615px] w-full pt-7">
+              <input type="text" placeholder="Enter your Product Name" class="w-full bg-chatlook-grayLight px-4 py-3 rounded-md text-chatlook-dark font-medium" value="Mocha Cafe" required>
+              <div class="relative mt-5">
+                <span class="icon-aroow-down text-lg text-chatlook-dark absolute right-4 z-10 top-1/2 -translate-y-1/2"></span>
+                <select name="" id="" class="w-full bg-chatlook-grayLight px-4 py-3 rounded-md text-chatlook-dark font-medium  focus-visible:outline-none appearance-none">
+                  <option value="">Cafe</option>
+                  <option value="">Cafe 1</option>
+                  <option value="">Cafe 2</option>
+                  <option value="">Cafe 3</option>
+                  <option value="">Cafe 4</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Enter your Product Name" class="w-full bg-chatlook-grayLight px-4 py-3 rounded-md text-chatlook-dark font-medium mt-5" value="Mocha Cafe" required>
+              <textarea name="" id="" rows="3" class="w-full bg-chatlook-grayLight px-4 py-3 rounded-md placeholder:text-chatlook-dark font-medium mt-5 resize-none focus-visible:outline-none" placeholder="It is a long established fact that a reader will be  distracted by the readable content of a page when looking at its layout." ></textarea>
+              <h4 class="w-full pt-5">Business Location</h4>
+              <iframe class="pt-3 rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29752.372694773487!2d72.81272570887673!3d21.230001150094267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04eeb5c1077c1%3A0xf3db03f8cc74c359!2sKatargam%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1652092847771!5m2!1sen!2sin" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="relative mt-5">
+                <span class="icon-aroow-down text-lg text-chatlook-dark absolute right-4 z-10 top-1/2 -translate-y-1/2"></span>
+                <select name="" id="" class="w-full bg-chatlook-grayLight px-4 py-3 rounded-md text-chatlook-dark font-medium  focus-visible:outline-none appearance-none">
+                  <option value="">Restorant</option>
+                  <option value="">Restorant 1</option>
+                  <option value="">Restorant 2</option>
+                  <option value="">Restorant 3</option>
+                  <option value="">Restorant 4</option>
+                </select>
+              </div>
+              <div class="relative mt-5">
+                <span class="icon-aroow-down text-lg text-chatlook-dark absolute right-4 z-10 top-1/2 -translate-y-1/2"></span>
+                <select name="" id="" class="w-full bg-chatlook-grayLight px-4 py-3 rounded-md text-chatlook-dark font-medium  focus-visible:outline-none appearance-none">
+                  <option value="">Food & Drink</option>
+                  <option value="">Food & Drink 1</option>
+                  <option value="">Food & Drink 2</option>
+                  <option value="">Food & Drink 3</option>
+                  <option value="">Food & Drink 4</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assest/js/main.js"></script>
+  </body>
+</html>

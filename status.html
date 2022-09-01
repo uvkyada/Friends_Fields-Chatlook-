@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatlook || Status</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assest/css/font.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="main flex items-start overflow-hidden">
+      <aside>
+        <!-- profile  -->
+        <div class="w-full flex items-center h-20 px-3.5 relative">
+          <a href="Profile.html" class="hidden md:flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-slate-200 flex p-2 pb-0 overflow-hidden">
+              <img src="./assest/images/woman.png" class="object-cover" alt="woman"/>
+            </div>
+            <div>
+              <h4>Hi,</h4>
+              <h4>Caroline Case</h4>
+            </div>
+        </a>
+          <span class="flex px-1 text-2xl ml-auto text-chatlook-dark">
+            <a href="addproduct.html" class="icon-store"></a>
+          </span>       
+          <span class="flex px-1 text-xl ml-2 text-chatlook-dark" onclick="toggleFunction('chat-drop', 'open')">
+            <a href="#" class="icon-Group-2"></a>
+          </span> 
+          <!-- chat-dropdown  -->
+          <div id="chat-drop" class="p-3.5 shadow-one bg-white absolute top-16 right-5 z-20 space-y-3 rounded-md min-w-[120px] scale-y-0 origin-top visited:hidden anim">
+            <h4><a href="Marketing.html">Marketing</a></h4>
+            <h4><a href="friend-request.html">Requests</a></h4>
+            <h4><a href="setting.html">Settings</a></h4>
+          </div>
+      </div>
+       <!-- tab-btn & search-bar -->
+      <div class="aside-tabs w-full px-3.5">
+          <!-- tab-header  -->
+          <div class="tab-menu flex justify-between p-[10px] bg-chatlook-grayLight rounded-md">
+              <a href="chat-details.html" class="py-2 px-6 text-sm font-medium uppercase">Chats</a>
+              <a href="status.html" class="py-2 px-6 text-sm font-medium  uppercase bg-white text-chatlook-sky shadow rounded-md">Status</a>
+              <a href="call-log.html" class="py-2 px-6 text-sm font-medium  uppercase">Calls</a>
+          </div>
+          <!-- search-bar  -->
+          <div class="tab-search py-4 flex items-center space-x-3">
+            <label for="search" class="w-[calc(100%-52px)] py-2 px-3 flex items-center rounded-md border border-chatlook-grayLight">
+              <input type="search" name="Search" id="Search" placeholder="Search" class="w-full outline-none">
+              <i class="icon-search"></i>
+            </label>
+            <span class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-sky shadow rounded-lg text-[#8094ae]">
+              <i class="icon-location" aria-hidden="true"></i>
+            </span>
+          </div>
+      </div>
+        <!-- my status  -->
+        <div class="px-5 pt-3">
+          <a href="#" class="flex pb-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">My Status</h4>
+              <span class="text-chatlook-gray">Tap to View status</span>
+            </div>
+          </a>
+          <!-- resent updates -->
+          <h3 class="capitalize pt-5">resent updates</h3>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+          <!-- viewed status -->
+          <h3 class="capitalize pt-5">viewed status</h3>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+          <a href="#" class="flex py-3" onclick="removeClassFunction('status','hidden')">
+            <div class="w-10 h-10 rounded-full overflow-hidden">
+              <img src="assest/images/profile.png" alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="pl-4">
+              <h4 class="text-chatlook-dark">Hunter Bryan</h4>
+              <span class="text-chatlook-gray">Today, 09:30</span>
+            </div>
+          </a>
+        </div>
+      </aside>
+      <div class="main-content">
+        <div class="bg-white w-full h-screen flex justify-center items-center">
+          <div class="text-center">
+            <span class="icon-round-eye text-9xl"></span>
+            <p class="pt-10">Click on a contact to view their status updates</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- status view popup  -->
+    <div id="status" class="hidden">
+      <div class="bg-chatlook-dark flex justify-center items-center w-screen h-screen fixed inset-0 z-40">
+        <div class="absolute ">
+          <div class="max-w-[800px] mx-auto w-full h-screen relative">
+            <img src="assest/images/pro-1.png" alt="" class="w-full h-full object-cover">
+            <div class="absolute top-8 left-0 right-0 mx-2">
+              <div class="w-full flex space-x-3">
+                <span class="inline-block w-1/2 h-1 bg-chatlook-dark rounded-full"></span>
+                <span class="inline-block w-1/2 h-1 bg-chatlook-dark rounded-full"></span>
+              </div>
+            </div>
+            <div class="absolute bottom-5 w-full bg-white border-t rounded-md border-chatlook-grayLight py-3">
+              <div class="w-full mx-auto flex items-center space-x-3">
+                <label for="#type-massage" class="px-3 py-2 flex space-x-3 items-center rounded-full border border-chatlook-grayLight w-[calc(100%-60px)] relative">
+                  <i class="icon-smile text-xl"></i>
+                  <input type="text" name="Start a new massage" class="w-full" placeholder="Start a new message" id="type-massage">
+                  <div class="absolute left-full">
+                    <div class="flex items-center space-x-3 ml-auto call">
+                      <button class="text-xl w-10 h-10 flex items-center justify-center bg-chatlook-sky shadow rounded-full text-[#8094ae]">
+                      <i class="icon-send"></i>
+                      </button>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-5 flex justify-between w-full px-5">
+          <button class="icon-left-arrow text-xl"></button>
+          <button class="icon-close text-xl"  onclick="addClassFunction('status','hidden')"></button>
+        </div>
+        <div class="absolute flex justify-between w-full px-5">
+          <button class="icon-aroow-down text-chatlook-sky rotate-90 text-xl"></button>
+          <button class="icon-aroow-down text-chatlook-sky -rotate-90 text-xl"></button>
+        </div>
+      </div>
+      <div class="absolute top-5 flex justify-between w-full px-5">
+        <button class="icon-left-arrow text-xl"></button>
+        <button class="icon-close text-xl"  onclick="addClassFunction('status','hidden')"></button>
+      </div>
+      <div class="absolute flex justify-between w-full px-5">
+        <button class="icon-aroow-down text-chatlook-sky rotate-90 text-xl"></button>
+        <button class="icon-aroow-down text-chatlook-sky -rotate-90 text-xl"></button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assest/js/main.js"></script>   
+  </body>
+</html>
